@@ -3,22 +3,32 @@
 import random
 
 class comp:
-    pass
-    
+    def __init__(self,num):
+        self.num = num
+        # print(self.num)
+        # self.level = level
+        # print("Your level", self.level)
+    def randnum(self):
+        print(self.num)
 
 class Player:
-    def greet(self,name):
+    def __init__(self,name):
         self.name = name
-        print("Welcome",self.name)
+        print("Welcome,",self.name)
 
+    
 # print(random.randint(1,10))
 
 # class Greet:
 
-user_name = (input("Enter your name: "))
+player_name = (input("Enter your name: "))
+# player_level = (int(input("choose your level: ")))
 
-Player1 =  Player()
+random_number = random.randint(1,10)
 
-Player1.greet(user_name)
+Comp1 = comp(random)
+Player1 =  Player(player_name)
+
+# Player1.greet(user_name)
 
 
