@@ -64,6 +64,7 @@ def cointoss(tossChoosed):
 
 
 print("Cricket Game")
+print("game instructions:\n1. First you have to choose *Head* OR *Tail* , if you win you will get 'Batting'. If you loose you will get bowling.\n2. Batting means your Score will be counted whereas in bowling opponent score will be counted.\n3. Player which has more score will be winner.")
 
 player_name = (input("Enter your name: "))
 Player1 =  Player(player_name)
