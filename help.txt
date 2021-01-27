@@ -1,0 +1,9 @@
+
+HELP--->
+
+***** "Don't Know How to Play" ---->
+                     Don't worry Its just like a real cricket  *****
+
+1. First you have to choose *Head* OR *Tail* , if you win you will get 'Batting'. If you loose you will get bowling.
+2. Batting means your Score will be counted whereas in bowling opponent score will be counted.
+3. Player which has more score will be winner.
