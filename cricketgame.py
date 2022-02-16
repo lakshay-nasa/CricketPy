@@ -2,9 +2,36 @@
 
 import random
 
-
 class Game_root:
-    pass
+    def player_input(self):
+        try:
+            player_num = int(input(f"Enter number 1 to {maxNum} : "))
+            if player_num in num_entry_allowed:
+                pass
+
+            else:
+                while player_num != num_entry_allowed:
+                    player_num = int(input(f"Enter number 1 to {maxNum} : "))
+                    if player_num in num_entry_allowed:
+                        pass
+                    else:
+                        print("Enter valid number")
+
+        except Exception:
+            print("Enter valid number")
+
+        else:
+            print(f"\n**Computer choosed -->{rand_num}")
+            print(f"**{player_name} choosed --> {player_num}\n")
+
+    def score_calc(self):
+            if player_num is not rand_num:
+                player_score += player_num
+            else:
+                pass
+
+    # print("Your batting score is", player_score)
+    # print("Now Computer's Turn")
 
 
 class Comp(Game_root):
@@ -114,10 +141,11 @@ choosed_level = Player1.level
 if choosed_level == 1:
     random_number = random.randint(1, 5)
     maxNum = 5
-
+    num_entry_allowed = (1, 2, 3, 4, 5)
 elif choosed_level == 2:
     random_number = random.randint(1, 10)
     maxNum = 10
+    num_entry_allowed = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
 
 else:
     print("Enter valid value")
@@ -139,6 +167,16 @@ if toss_result == True:
         # print(rand_num)                                                               #--> for testing
         try:
             player_num = int(input(f"Enter number 1 to {maxNum} : "))
+            if player_num in num_entry_allowed:
+                pass
+
+            else:
+                while player_num != num_entry_allowed:
+                    player_num = int(input(f"Enter number 1 to {maxNum} : "))
+                    if player_num in num_entry_allowed:
+                        pass
+                    else:
+                        print("Enter valid number")
 
         except Exception as e:
             print("Enter valid number")
